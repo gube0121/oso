@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stress Predictor Demo</title>
+  <script defer src="script.js"></script>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 40px auto; }
+    input { width: 100%; padding: 8px; margin: 6px 0; }
+    button { width: 100%; padding: 10px; }
+    #result { margin-top: 20px; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>AI‑기반 스트레스 예측</h1>
+  <label>심박수(bpm): <input id="hr" type="number" placeholder="예: 85" /></label>
+  <label>체온(℃): <input id="temp" type="number" step="0.1" placeholder="예: 36.8" /></label>
+  <label>활동량(0~100): <input id="act" type="number" placeholder="예: 70" /></label>
+  <button id="predictBtn">예측하기</button>
+  <div id="result"></div>
+</body>
+</html>
